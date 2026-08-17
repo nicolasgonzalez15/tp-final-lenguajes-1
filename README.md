@@ -1,2 +1,14 @@
-# tp-final-lenguajes-1
-Proyecto relacionado a TP en HTML, CSS y JS de Lenguajes 1 - UNAHUR
+# Lenguajes I - Trabajo Practico Integrador
+Proyecto integrador web de ONG para materia Lenguajes I - UNAHUR
+
+## Tecnologías usadas
+* HTML
+* CSS
+* JS
+
+## Alumnos
+* González, Nicolás Ezequiel
+* Gómez, Julieta Elisa
+* Heis, Matias Ezequiel
+
+
