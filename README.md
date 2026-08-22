@@ -8,7 +8,7 @@ Proyecto integrador web de ONG para materia Lenguajes I - UNAHUR
 
 ## Alumnos
 * González, Nicolás Ezequiel
-* Gómez, Julieta Elisa
+* Gomez, Julieta Elisa
 * Heis, Matias Ezequiel
 
 
