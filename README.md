@@ -1,5 +1,5 @@
 # Lenguajes I - Trabajo Practico Integrador
-Proyecto integrador web de ONG para materia Lenguajes I - UNAHUR
+Proyecto integrador web de ONG para materia Lenguajes I - UNAHUR 2026
 
 ## Tecnologías usadas
 * HTML
