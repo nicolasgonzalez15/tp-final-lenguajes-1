@@ -1,5 +1,5 @@
 # Lenguajes I - Trabajo Practico Integrador
-Proyecto integrador web de ONG para materia Lenguajes I - UNAHUR - 2026
+Proyecto integrador web de ONG para materia Lenguajes I - UNAHUR
 
 ## Tecnologías usadas
 * HTML
@@ -10,7 +10,7 @@ Proyecto integrador web de ONG para materia Lenguajes I - UNAHUR - 2026
 * González, Nicolás Ezequiel
 * Gomez, Julieta Elisa
 * Heis, Matias Ezequiel
-* Romero, Facundo
+* Romero, Facundo Julian
 * Carvallio Rodrigo
 
 
