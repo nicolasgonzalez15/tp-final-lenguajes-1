@@ -14,4 +14,4 @@ Proyecto integrador web de Ciudad Ficticia para materia Lenguajes I - UNAHUR 202
 * Gomez, Julieta Elisa - [histamina](https://github.com/Histamina)
 * Heis, Matias Ezequiel - [Matias-EH](https://github.com/Matias-EH)
 * Romero, Facundo Julian - [romerofacu](https://github.com/romerofacu)
-* Carvallio Rodrigo - [rochacarvallorodrigonicolas-cmyk](https://github.com/rochacarvallorodrigonicolas-cmyk)
+* Carvallo Rodrigo - [rochacarvallorodrigonicolas-cmyk](https://github.com/rochacarvallorodrigonicolas-cmyk)
