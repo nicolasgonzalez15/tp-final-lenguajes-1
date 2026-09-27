@@ -1,0 +1,255 @@
+/* Estilos base */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Marca y Estructura */
+  --color-primario: #4A5844;
+  --header-footer-bg: #333B30;
+  --header-footer-texto: #EFECE6;
+  --nav-texto: #C2AD96;
+
+  /* Fondos generales */
+  --bg-principal: #F6F5F2;
+  --bg-secundario: #ECEBE6;
+
+  /* Textos */
+  --textos-primario-oscuro: #2B2D2A;
+  --textos-primario-claro: #D96B27;
+  --textos-secundario-oscuro: #5E615B;
+  --textos-footer-gris: #E0DFDE;
+
+  /* Colores Hover */
+  --text-hover-soft: #C87D55;
+  --text-hover-strong: #D96B27;
+
+  /* Fuentes */
+  --fuente-principal: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-footer-bg);
+  padding: 1rem 2rem;
+  color: var(--header-footer-texto);
+  position: relative;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.logo-link {
+  color: #EFECE6;
+  font-weight: 600;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: var(--nav-texto);
+  font-weight: 500;
+  transition: color ease-in-out 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--text-hover-strong);
+}
+
+/* Botón Hamburguesa Estilos Generales */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 101;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--header-footer-texto);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos secciones */
+section {
+  padding: 2rem;
+}
+
+section h1, section h2, section p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.principal {
+  background-image: url("../img/ciudad/villa-nieves-centro.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: var(--nav-texto);
+  text-align: center;
+}
+
+main img {
+  max-width: 500px;
+}
+
+/* Estilos resto equipo*/
+
+/*-------- ACA van los estilos que falten -------------*/
+
+/* Estilos Footer */
+.footer-moderno {
+  background-color: var(--color-primario);
+  color: var(--header-footer-texto);
+  padding: 40px 20px 0 20px;
+  font-family: var(--fuente-principal);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-col h3, .footer-col h4 {
+  color: var(--header-footer-texto);
+  margin-bottom: 15px;
+}
+
+.footer-col a {
+  color: var(--nav-texto);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: var(--text-hover-strong);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--textos-secundario-oscuro);
+  margin-top: 30px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--textos-secundario-oscuro);
+}
+
+.footer-bottom small {
+  color: var(--textos-footer-gris);
+}
+
+/* Responsive / Media queries */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+
+  /* Ocultar el menú por defecto y posicionarlo desplegable */
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background-color: var(--header-footer-bg);
+    transition: left 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+  }
+
+  /* Mostrar menú */
+  .nav-menu.active {
+    left: 0;
+  }
+
+  /* Animación del botón en la cruz (X) */
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+/*-------- ACA van los estilos que falten responsives -------------*/
+
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
