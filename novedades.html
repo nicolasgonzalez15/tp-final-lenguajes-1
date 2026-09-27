@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Villa Nieves del Sur">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/villa-nieves-logo.png" type="image/x-icon">
     <title>Villa Nieves del Sur - Sitio Oficial - Inicio</title>
 </head>
 <body>
     <header>
-        <a href="index.html">VILLA NIEVES DEL SUR</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="ciudad.html">CIUDAD</a></li>
-                <li><a href="lugares.html">LUGARES</a></li>
-                <li><a href="novedades.html">NOVEDADES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+        <!-- Logo container -->
+        <div class="logo-container">
+            <img src="img/villa-nieves-logo.png" alt="Logo oficial de Villa Nieves del Sur" class="logo-img">    
+            <a href="index.html" class="logo-link">VILLA NIEVES DEL SUR</a>
+        </div>
+        <!--Botón para menu hamburger responsive-->
+        <div class="hamburger" id="hamburger" aria-label="Abrir menú" role="button" aria-expanded="false" tabindex="0">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- Menú navegación -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul class="nav-items">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -46,16 +59,35 @@
        
 
     </main>
-    <footer>
-        <p>Villa Nieves del Sur</p>
-        <p>Villa Nieves del Sur, Neuquén, Argentina</p>
-        <address>
-            <a href="tel:+54(02255)45-7255">+54 (02255) 45-7255</a>
-            <a href="mailto:villanievesdelsur@argentina.gob">Mail Oficial</a>
-        </address>
-        <a href="https://www.instagram.com/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.argentina.gob.ar/" target="_blank" rel="noopener noreferrer">Sitio Argentina</a>
-        <small>Copyright ©2026. Villa Nieves del Sur.</small>
-    </footer>
+ <footer class="footer-moderno">
+    <div class="footer-container">
+        <!-- Columna 1: Nombre y Ubicación -->
+        <div class="footer-col">
+        <h3>Villa Nieves del Sur</h3>
+        <p> Villa Nieves del Sur, Neuquén, Argentina</p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="footer-col">
+        <h4>Contacto</h4>
+        <p><a href="tel:+5402255457255">+54 (02255) 45-7255</a></p>
+        <p><a href="mailto:villanievesdelsur@argentina.gob" class="btn-mail">villanievesdelsur@argentina.gob</a></p>
+        </div>
+
+        <!-- Columna 3: Enlaces externos y Redes -->
+        <div class="footer-col">
+        <h4>Enlaces</h4>
+        <p><a href="https://www.instagram.com/villa-nieves-del-sur" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        <p><a href="https://www.facebook.com/villa-nieves-del-sur" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+        <p><a href="https://www.argentina.gob.ar/" target="_blank" rel="noopener noreferrer">Sitio Argentina</a></p>
+        </div>
+    </div>
+
+    <!-- Barra Copyright -->
+    <div class="footer-bottom">
+        <small class="footer-copyright">Copyright ©2026. Villa Nieves del Sur.</small>
+    </div>
+</footer>
+    <script src="js/hamburger-menu.js"></script>
 </body>
 </html>
