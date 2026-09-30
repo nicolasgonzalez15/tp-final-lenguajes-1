@@ -145,6 +145,60 @@ main img {
 
 /*-------- ACA van los estilos que falten -------------*/
 
+
+/* Estilos Contacto */
+
+.main-div-section-aside {
+  display: flex;
+  padding: 40px 50px;
+  column-gap: 60px;
+}
+
+.main-title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title-div .--title {
+  background-color: rgba(142, 142, 142, 0.504);
+}
+
+.main-div-section-aside h2 {
+  color: var(--textos-primario-oscuro);
+  text-align: left;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.main-div-section-aside ul {
+  padding-left: 35px;
+}
+
+.main-div-section-aside a {
+  color: var(--textos-primario-claro);
+}
+
+.main-div-section-aside a:hover {
+  color: var(--text-hover-soft);
+}
+
+.section-contacto {
+  padding: 0 0 20px 0;
+}
+
+.section-contacto.--formulario form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.section-contacto.--formulario form input {
+  height: 32px;
+}
+
+
+
 /* Estilos Footer */
 .footer-moderno {
   background-color: var(--color-primario);
