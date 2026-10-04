@@ -383,6 +383,11 @@ main img {
   height: fit-content;
 }
 
+.main-div-section-aside .aside-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .section-container {
   background-color: var(--bg-secundario);
   padding: 25px 30px;
@@ -631,20 +636,33 @@ main img {
     padding-right: 20px;
   }
 
+  .main-div-section-aside .aside-container h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .section-contacto .form-wrapper {
+    padding: 10px 30px 20px 30px;
+  }
+
+  .section-contacto h2 {
+    font-size: 18px;
+  }
+
   .aside-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .contacto-aside h3 {
+  .aside-container h3 {
     font-size: 18px;
     line-height: 20px;
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .contacto-aside iframe {
+  .aside-container iframe {
     width: 100%;
     max-width: 600px;
     height: 300px;
