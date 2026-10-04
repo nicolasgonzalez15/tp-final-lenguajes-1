@@ -747,11 +747,16 @@ main img {
 #gastronomia .gastronomia-container,
 #excursiones .excursiones-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
+  background-color: var(--bg-secundario);
+  border-left: 5px solid var(--color-primario);
+  border-radius: 6px;
+  padding: 1.5rem;
 }
 
 #gastronomia .gastronomia-container ul,
@@ -780,17 +785,4 @@ main img {
   border-radius: 10px;
 }
 
- #gastronomia .gastronomia-container,
-  #excursiones .excursiones-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  #gastronomia .gastronomia-container ul,
-  #excursiones .excursiones-container ul,
-  #gastronomia .gastronomia-container figure,
-  #excursiones .excursiones-container figure {
-    width: 100%;
-  }
-
-  /* Estilos Lugares FIN********************************/
+/* Estilos Lugares FIN********************************/
