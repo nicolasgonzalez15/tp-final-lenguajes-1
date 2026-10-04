@@ -696,6 +696,7 @@ main img {
 }
 
 /* Estilos Lugares INI********************************/
+
 #lugares-interes .lugares-container {
   display: flex;
   flex-direction: column;
