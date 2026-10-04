@@ -332,6 +332,32 @@ main img {
   line-height: 1.5;
   margin: 0;
 }
+/*----estilos ciudad----*/
+.slide-ciudad{
+  padding:1rem;
+  background-color: var(--bg-secundario);
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  gap: 1rem;
+}
+
+.datos-container{
+  padding: 1rem;
+  background-color: var(--bg-secundario);
+  text-align: center;
+  margin:0 auto;
+  border-radius:10px;
+  max-width: 600px;
+}
+.dato-importante{
+  padding:0.5rem;
+  background-color: var(--bg-tarjeta-atractivo);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 
 /* ------- ESTILOS CONTACTO ------- */
 
