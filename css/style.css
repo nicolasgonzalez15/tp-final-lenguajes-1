@@ -11,6 +11,7 @@
   /* Fondos generales */
   --bg-principal: #F6F5F2;
   --bg-secundario: #ECEBE6;
+  --bg-tarjeta-atractivo:#F5E9E9;
 
   /* Textos */
   --textos-primario-oscuro: #2B2D2A;
@@ -122,7 +123,7 @@ nav ul {
 
 /* Estilos secciones */
 section {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section h1, section h2, section p {
@@ -138,6 +139,13 @@ section h1, section h2, section p {
   text-align: center;
 }
 
+.principal h1, 
+.principal p {
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 
+               0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
 main img {
   max-width: 500px;
 }
@@ -146,6 +154,184 @@ main img {
 
 /*-------- ACA van los estilos que falten -------------*/
 
+/*Estilos Index - Presentación*/
+
+.presentacion-container {
+  padding: 1.5rem;
+  background-color: var(--bg-primario);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.slide-presentacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding:2rem;
+  background-color:var(--bg-secundario);
+  border-radius: 10px;
+}
+
+.textos-slide {
+  width: 50%;
+}
+
+.textos-slide h3 {
+  text-align:center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--nav-texto);
+}
+.parrafos-slide > p{
+   line-height: 1.5;
+  padding:5px;
+  margin:0;
+}
+
+.fig-slide {
+  width: 50%;
+  margin: 0;
+}
+
+.imagen-slide {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Mantiene la imagen apaisada / 1/1 cuadrada */
+  object-fit: cover;   /* Evita que la imagen se deforme */
+  border-radius: 15px;
+}
+
+.tags-presentacion {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/*Estilos Index - Atractivos*/
+
+.atractivos-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:1rem;
+}
+
+.tarjeta-atractivo{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:25%;
+    min-width: 325px;
+    aspect-ratio: 1/1;
+    background-color:var(--bg-tarjeta-atractivo);
+    margin:1.25rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-content:normal;
+    padding:20px;
+    border-radius:15px;
+}
+
+.tarjeta-atractivo img{
+  max-width: 90%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.tarjeta-atractivo h3{
+  color: var(--textos-primario-oscuro);
+}
+
+.tarjeta-atractivo:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.newsletter{
+  padding: 1rem;
+}
+
+.newsletter-form{
+  padding:2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-secundario);
+  max-width: 600px;
+  gap: 1rem;
+  border:1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-news-item{
+  display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.form-news-item input{
+  height: 32px;
+  width: 70%;
+  font-family: var(--fuente-principal);
+}
+
+.newsletter-form button{
+  background-color: var(--text-hover-strong);
+  border: 1px solid var(--text-hover-strong);
+  padding: 8px 45px;
+  border-radius: 4px;
+  color: var(--bg-principal);
+  font-family: var(--fuente-principal);
+  font-size: 14px;
+}
+
+
+#adicional {  
+  background-color: #f4f6f8;
+  border-left: 5px solid #2c3e50;
+
+  border-radius: 6px;
+}
+
+#adicional h2 {
+  font-size: 16px;
+  color: #7f8c8d;
+  text-transform: uppercase;
+}
+
+#adicional p {
+  font-size: 18px;
+  color: #2c3e50;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}
 
 /* Estilos Contacto */
 
@@ -355,6 +541,21 @@ main img {
 
 /*-------- ACA van los estilos que falten responsives -------------*/
 
+  /* Estilos index - Presentación */
+  .slide-presentacion {
+    flex-direction: column;
+  }
+
+  .textos-slide,
+  .fig-slide {
+    width: 100%;
+  }
+
+  .presentacion-container {
+    padding: 1rem;
+  }
+
+ /* Estilos index - Atractivos y Newsletter */
 
   .footer-container {
     flex-direction: column;
@@ -362,6 +563,22 @@ main img {
     align-items: center;
     text-align: center;
   }
+
+  .form-news-item{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 90%;
+    gap: 0.35rem;
+}
+
+  .form-news-item input{
+    height: 32px;
+    width: 100%;
+    font-family: var(--fuente-principal);
+  }
+
 }
 
 
