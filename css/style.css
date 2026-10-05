@@ -312,25 +312,28 @@ main img {
 }
 
 
-#adicional {  
+.adicional {  
   background-color: #f4f6f8;
   border-left: 5px solid #2c3e50;
-
+  padding:1.5rem;
   border-radius: 6px;
+  text-align: center;
 }
 
-#adicional h2 {
+.adicional h2 {
   font-size: 16px;
   color: #7f8c8d;
   text-transform: uppercase;
+  padding:1rem;
+  margin-bottom:5px;
 }
 
-#adicional p {
+.adicional p {
   font-size: 18px;
   color: #2c3e50;
   font-style: italic;
   line-height: 1.5;
-  margin: 0;
+  margin-bottom:5px;
 }
 /*----estilos ciudad----*/
 .slide-ciudad{
