@@ -238,7 +238,6 @@ main img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /*flex: 1 1 25%;*/
     width:25%;
     min-width: 325px;
     aspect-ratio: 1/1;
