@@ -433,6 +433,10 @@ border-radius: 10px;
   margin-bottom: 10px;
 }
 
+.main-div-section-aside .aside-container iframe {
+  border: 0;
+}
+
 .section-container {
   background-color: var(--bg-secundario);
   padding: 25px 30px;
