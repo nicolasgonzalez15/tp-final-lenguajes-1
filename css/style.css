@@ -228,7 +228,7 @@ main img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   padding:1rem;
 }
