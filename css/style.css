@@ -7,6 +7,7 @@
   --header-footer-bg: #333B30;
   --header-footer-texto: #EFECE6;
   --nav-texto: #C2AD96;
+  --header-logo-titulo: #EFECE6;
 
   /* Fondos generales */
   --bg-principal: #F6F5F2;
@@ -47,78 +48,43 @@ a {
 }
 
 /* Estilos Header */
+
+/* Estilos generales del header y transiciones */
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--header-footer-bg);
-  padding: 1rem 2rem;
-  color: var(--header-footer-texto);
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 100;
 }
 
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  max-width: 32px;
-  max-height: 32px;
-}
-
-.logo-link {
-  color: #EFECE6;
-  font-weight: 600;
-}
-
-nav ul li {
-  list-style-type: none;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.nav-link {
+/* Estilos propios para header*/
+/* Color y transición personalizada para los enlaces */
+.custom-nav-link {
   color: var(--nav-texto);
   font-weight: 500;
   transition: color ease-in-out 0.3s;
 }
 
-.nav-link:hover {
+.custom-nav-link:hover {
   color: var(--text-hover-strong);
 }
 
-/* Botón Hamburguesa Estilos Generales */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 101;
+/* Botón Hamburger - Colocar para que contraste bien con fondos oscuros */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(239, 236, 230, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.hamburger .bar {
-  height: 3px;
-  width: 100%;
-  background-color: var(--header-footer-texto);
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+.custom-navbar{
+  background-color: var(--header-footer-bg); 
+  color: var(--header-footer-texto);
+}
+
+.custom-logo-img{
+  max-width: 32px; 
+  max-height: 32px;
+}
+.custom-logo-link{
+  color:var(--header-logo-titulo); 
+  font-weight: 600;
 }
 
 /* Estilos secciones */
@@ -131,12 +97,29 @@ section h1, section h2, section p {
   padding: 1rem;
 }
 
+/* Sección principal*/
+
 .principal {
   background-image: url("../img/ciudad/villa-nieves-centro.jpeg");
   background-position: center;
   background-size: cover;
   color: var(--nav-texto);
   text-align: center;
+  position: relative;
+  min-height: 250px;
+}
+
+.textos-principal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+}
+
+.textos-principal p{
+  font-size: 1.25rem;
 }
 
 .principal h1, 
@@ -146,13 +129,29 @@ section h1, section h2, section p {
                0px 0px 20px rgba(0, 0, 0, 0.6);
 }
 
-main img {
+.slide-ciudad img, .slide-presentacion img {
   max-width: 500px;
+  border-radius: 10px;
 }
 
 /* Estilos resto equipo*/
 
 /*-------- ACA van los estilos que falten -------------*/
+
+/*Estilos Index - Carousel imagenes*/
+
+/* Dimensiones del carrusel */
+.hero-carousel {
+  height: 500px; /* Altura para pantallas grandes */
+  width: 100%;
+}
+
+/* Asegurar que los elementos internos ocupen toda la altura */
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: 100%;
+}
+
 
 /*Estilos Index - Presentación*/
 
@@ -292,7 +291,6 @@ main img {
     align-items: center;
     width: 100%;
     gap: 1rem;
-
 }
 
 .form-news-item input{
@@ -335,7 +333,9 @@ main img {
   line-height: 1.5;
   margin-bottom:5px;
 }
-/*----estilos ciudad----*/
+
+/*----Estilos Ciudad----*/
+
 .slide-ciudad{
   padding:1rem;
   background-color: var(--bg-secundario);
@@ -362,20 +362,12 @@ main img {
   margin-bottom: 10px;
 }
 
-
-
 /*---Estilos novedades------*/
 .boletin-oficial {
 padding: 1rem;
 background-color: #f1b979;
 border-radius: 10px;
-
-
-
-
 }
-
-
 
 /* ------- ESTILOS CONTACTO ------- */
 
@@ -569,52 +561,12 @@ border-radius: 10px;
 
 @media (max-width: 768px) {
 
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-
-  /* Ocultar el menú por defecto y posicionarlo desplegable */
-  .nav-menu {
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    width: 100%;
-    background-color: var(--header-footer-bg);
-    transition: left 0.3s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-    gap: 1.5rem;
-  }
-
-  /* Mostrar menú */
-  .nav-menu.active {
-    left: 0;
-  }
-
-  /* Animación del botón en la cruz (X) */
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-
 /*-------- ACA van los estilos que falten responsives -------------*/
+
+  /* Estilos carrousel - Index */
+  .hero-carousel {
+    height: 350px; /* Altura fija en celulares */
+  }
 
   /* Estilos index - Presentación */
   .slide-presentacion {
@@ -655,7 +607,6 @@ border-radius: 10px;
   }
 
 }
-
 
 @media screen and (max-width: 1126px) {
   .principal.--contacto {
@@ -808,3 +759,16 @@ border-radius: 10px;
 }
 
 /* Estilos Lugares FIN********************************/
+
+/*Estilos Galeria Grid*/
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
