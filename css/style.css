@@ -412,7 +412,14 @@ border-radius: 10px;
   color: var(--text-hover-soft);
 }
 
-.main-div-section-aside .aside-container {
+.main-div-section-aside .aside-container .card {
+  background-color: var(--bg-secundario);
+  padding: 25px 30px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.main-div-section-aside .card {
   background-color: var(--bg-secundario);
   padding: 25px 30px;
   border-radius: 10px;
@@ -435,72 +442,17 @@ border-radius: 10px;
   margin-bottom: 25px;
 }
 
-.section-contacto {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 90px;
-}
-
-.section-contacto .form-wrapper {
+.form-wrapper {
   background-color: var(--bg-secundario);
   border-radius: 10px;
   padding: 20px 70px 50px 70px;
 }
 
-.section-contacto form {
+form {
   display: flex;
   flex-direction: column;
 }
 
-.section-contacto form label {
-  font-size: 13px;
-}
-
-.section-contacto form input {
-  height: 32px;
-  font-family: var(--fuente-principal);
-  margin-bottom: 15px;
-}
-
-.section-contacto form input:focus-visible {
-  outline: none;
-  border: 1px solid var(--text-hover-soft);
-}
-
-.section-contacto form textarea:focus-visible {
-  outline: none;
-  border: 1px solid var(--text-hover-soft);
-}
-
-.section-contacto form textarea {
-  width: 100%;
-  max-width: 100%;
-}
-
-.section-contacto form textarea::placeholder {
-  font-family: var(--fuente-principal);
-}
-
-.section-contacto form .button-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-}
-
-.section-contacto form .button-wrapper button {
-  background-color: var(--text-hover-strong);
-  border: 1px solid var(--text-hover-strong);
-  padding: 8px 45px;
-  border-radius: 4px;
-  color: var(--bg-principal);
-  font-family: var(--fuente-principal);
-  font-size: 14px;
-}
-
-.section-contacto form .button-wrapper button:hover {
-  background-color: var(--text-hover-soft);
-  border: 1px solid var(--text-hover-soft);
-}
 
 
 /* ----- ESTILOS FOOTER ----- */
@@ -640,11 +592,11 @@ border-radius: 10px;
     margin-bottom: 20px;
   }
 
-  .section-contacto .form-wrapper {
+  .form-wrapper {
     padding: 10px 30px 20px 30px;
   }
 
-  .section-contacto h2 {
+  .contacto-title {
     font-size: 18px;
   }
 
