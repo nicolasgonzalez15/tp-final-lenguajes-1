@@ -625,9 +625,6 @@ form {
 /* Estilos Lugares INI********************************/
 
 #lugares-interes .lugares-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -654,43 +651,32 @@ form {
   margin-top: 0.5rem;
 }
 
-#lugares-interes .lugares-container article {
+/* El fondo interior deja visible la separación de columnas de Bootstrap. */
+#lugares-interes .lugares-container .lugar-card {
   background-color: var(--bg-secundario);
   border-left: 5px solid var(--color-primario);
   border-radius: 6px;
   padding: 1.5rem;
 }
 
-#lugares-interes .lugares-container article h3 {
+#lugares-interes .lugares-container .lugar-card h3 {
   color: var(--textos-primario-oscuro);
   margin-bottom: 0.5rem;
 }
 
-#lugares-interes .lugares-container article p {
+#lugares-interes .lugares-container .lugar-card p {
   text-align: left;
   padding: 0.35rem 0;
 }
 
 #gastronomia .gastronomia-container,
 #excursiones .excursiones-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
   background-color: var(--bg-secundario);
   border-left: 5px solid var(--color-primario);
   border-radius: 6px;
   padding: 1.5rem;
-}
-
-#gastronomia .gastronomia-container ul,
-#excursiones .excursiones-container ul,
-#gastronomia .gastronomia-container figure,
-#excursiones .excursiones-container figure {
-  flex: 1;
 }
 
 #gastronomia .gastronomia-container ul,

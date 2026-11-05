@@ -2,19 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Villa Nieves del Sur">
+
     <link rel="shortcut icon" href="img/villa-nieves-logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Villa Nieves del Sur - Lugares</title>
+
 </head>
 <body>
     <header id="header">
+        <!-- Bootstrap: navbar responsive con menú colapsable -->
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid justify-content-between align-items-center px-4 py-2">
                 
@@ -49,48 +55,57 @@
         
         <section id="lugares-interes">
             <h2>Lugares Destacados</h2>
-            <div class="lugares-container">
-                <figure>
-                    <img src="img/lugares/lugares.png" alt="Fábrica de chocolate, glaciar y viñedos de Villa Nieves del Sur." width="800" height="400">
+            <!-- Bootstrap: grilla responsive para la imagen y las tarjetas de lugares. -->
+            <div class="lugares-container row g-4">
+                <figure class="col-12">
+                    <img src="img/lugares/lugares.png" alt="Fábrica de chocolate, glaciar y viñedos de Villa Nieves del Sur." width="800" height="400" class="img-fluid">
                     <figcaption>Atractivos de Villa Nieves del Sur</figcaption>
                 </figure>
 
-                <article>
-                    <h3>Paseo Artesanal y Fábrica "El Tronco de Cacao"</h3>
-                    <p><strong>Descripción:</strong> La fábrica más antigua y famosa del país. Cuenta con un museo interactivo del chocolate y ventanales acristalados para observar la producción en tiempo real.</p>
-                    <p><strong>Ubicación:</strong> Distrito del Cacao, Av. Los Alerces 450.</p>
-                    <p><strong>¿Qué hacer?:</strong> Talleres de moldeado de chocolate para niños y adultos, cata a ciegas de variedades con porcentajes de cacao del 30% al 90%, y degustación gratuita en la tienda.</p>
-                    <p><strong>¿Por qué visitarlo?:</strong> Es la cuna donde se inventó la receta tradicional del chocolate en rama nevispino.</p>
+                <!-- Bootstrap: las columnas dejan visible el espacio definido por g-4. -->
+                <article class="col-12 col-md-6 col-xl-4">
+                    <div class="lugar-card">
+                        <h3>Paseo Artesanal y Fábrica "El Tronco de Cacao"</h3>
+                        <p><strong>Descripción:</strong> La fábrica más antigua y famosa del país. Cuenta con un museo interactivo del chocolate y ventanales acristalados para observar la producción en tiempo real.</p>
+                        <p><strong>Ubicación:</strong> Distrito del Cacao, Av. Los Alerces 450.</p>
+                        <p><strong>¿Qué hacer?:</strong> Talleres de moldeado de chocolate para niños y adultos, cata a ciegas de variedades con porcentajes de cacao del 30% al 90%, y degustación gratuita en la tienda.</p>
+                        <p><strong>¿Por qué visitarlo?:</strong> Es la cuna donde se inventó la receta tradicional del chocolate en rama nevispino.</p>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Reserva Natural y Glaciar Ventisquero Blanco</h3>
-                    <p><strong>Descripción:</strong> Imponente masa helada rodeada por un bosque andino patagónico primario con fauna protegida como huemules y zorros colorados.</p>
-                    <p><strong>Ubicación:</strong> A 15 km del Barrio Histórico El Robledal (Acceso por Ruta Provincial Ficticia 88).</p>
-                    <p><strong>¿Qué hacer?:</strong> Trekking sobre hielo con grampones, caminatas de interpretación de flora autóctona, y fotogalería al aire libre.</p>
-                    <p><strong>¿Por qué visitarlo?:</strong> Es uno de los pocos glaciares en retroceso controlado de fácil acceso para toda la familia.</p>
+                <article class="col-12 col-md-6 col-xl-4">
+                    <div class="lugar-card">
+                        <h3>Reserva Natural y Glaciar Ventisquero Blanco</h3>
+                        <p><strong>Descripción:</strong> Imponente masa helada rodeada por un bosque andino patagónico primario con fauna protegida como huemules y zorros colorados.</p>
+                        <p><strong>Ubicación:</strong> A 15 km del Barrio Histórico El Robledal (Acceso por Ruta Provincial Ficticia 88).</p>
+                        <p><strong>¿Qué hacer?:</strong> Trekking sobre hielo con grampones, caminatas de interpretación de flora autóctona, y fotogalería al aire libre.</p>
+                        <p><strong>¿Por qué visitarlo?:</strong> Es uno de los pocos glaciares en retroceso controlado de fácil acceso para toda la familia.</p>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Bodega de Altura y Viñedos "Sombra de Nieve"</h3>
-                    <p><strong>Descripción:</strong> Una de las pocas bodegas australes especializadas en vinos de clima extremo (Pinot Noir y Chardonnay) criada en barricas en cavas subterráneas de piedra.</p>
-                    <p><strong>Ubicación:</strong> Caminito del Faldeo S/N, Barrio Villa Los Arrayanes.</p>
-                    <p><strong>¿Qué hacer?:</strong> Maridaje guiado de vinos patagónicos con chocolates artesanales amargos y quesos ahumados de la zona.</p>
-                    <p><strong>¿Por qué visitarlo?:</strong> Ofrece una experiencia sensorial única que combina la acidez de los vinos de frío con el dulzor del cacao local.</p>
+                <article class="col-12 col-md-6 col-xl-4">
+                    <div class="lugar-card">
+                        <h3>Bodega de Altura y Viñedos "Sombra de Nieve"</h3>
+                        <p><strong>Descripción:</strong> Una de las pocas bodegas australes especializadas en vinos de clima extremo (Pinot Noir y Chardonnay) criada en barricas en cavas subterráneas de piedra.</p>
+                        <p><strong>Ubicación:</strong> Caminito del Faldeo S/N, Barrio Villa Los Arrayanes.</p>
+                        <p><strong>¿Qué hacer?:</strong> Maridaje guiado de vinos patagónicos con chocolates artesanales amargos y quesos ahumados de la zona.</p>
+                        <p><strong>¿Por qué visitarlo?:</strong> Ofrece una experiencia sensorial única que combina la acidez de los vinos de frío con el dulzor del cacao local.</p>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section id="gastronomia">
             <h2>Gastronomía típica y recomendaciones</h2>
-            <div class="gastronomia-container">
-                <ul>
+            <!-- Bootstrap: grilla responsive para distribuir la lista y la imagen. -->
+            <div class="gastronomia-container row align-items-center g-4">
+                <ul class="col-12 col-lg-6">
                     <li><strong>Guiso Cordillerano de Ciervo y Hongos del Bosque:</strong> Estofado lento en olla de hierro fundido con vino tinto local.</li>
                     <li><strong>Trucha Arcoíris a la Manteca de Cacao:</strong> Salteada con especias nativas y servida con puré ahumado de papas andinas.</li>
                     <li><strong>Fondues de Chocolate en Rama:</strong> Plato dulce insignia servido con frutas cordilleranas frescas (frambuesas, calafates y moras).</li>
                 </ul>
-                <figure>
-                    <img src="img/lugares/gastronomia.png" alt="Platos típicos de la región: guiso, trucha y chocolate con frutos rojos." width="800" height="400">
+                <figure class="col-12 col-lg-6">
+                    <img src="img/lugares/gastronomia.png" alt="Platos típicos de la región: guiso, trucha y chocolate con frutos rojos." width="800" height="400" class="img-fluid">
                     <figcaption>Sabores típicos de la región</figcaption>
                 </figure>
             </div>
@@ -98,35 +113,37 @@
 
         <section id="excursiones">
             <h2>Excursiones imperdibles</h2>
-            <div class="excursiones-container">
-                <ul>
+            <!-- Bootstrap: grilla responsive para distribuir la lista y la imagen. -->
+            <div class="excursiones-container row align-items-center g-4">
+                <ul class="col-12 col-lg-6">
                     <li><strong>Excursión 1: Senderismo Transandino por el Bosque de Coihues:</strong> Caminata de 4 horas de dificultad media que atraviesa arroyos descongelados hasta llegar a la cascada escondida "El Velo de la Nieves".</li>
                     <li><strong>Excursión 2: Navegación y Visita al Glaciar Ventisquero Blanco:</strong> Excursión lacustre de medio día que acerca a los visitantes a solo 100 metros de las paredes heladas del glaciar con desprendimientos en vivo.</li>
                 </ul>
-                <figure>
-                    <img src="img/lugares/excursiones.png" alt="Senderismo por un bosque y navegación frente a un glaciar." width="800" height="400">
+                <figure class="col-12 col-lg-6">
+                    <img src="img/lugares/excursiones.png" alt="Senderismo por un bosque y navegación frente a un glaciar." width="800" height="400" class="img-fluid">
                     <figcaption>Recorridos de aventura en la naturaleza</figcaption>
                 </figure>
             </div>
         </section>
 
     </main>
+    
  <footer class="footer-moderno">
     <div class="footer-container">
-        <!-- Columna 1: Nombre y Ubicación -->
+        <!-- Nombre y Ubicacion -->
         <div class="footer-col">
         <h3>Villa Nieves del Sur</h3>
         <p> Villa Nieves del Sur, Neuquén, Argentina</p>
         </div>
 
-        <!-- Columna 2: Contacto -->
+        <!-- Contacto -->
         <div class="footer-col">
         <h4>Contacto</h4>
         <p><i class="bi bi-telephone"></i> <a href="tel:+5402255457255">+54 (02255) 45-7255</a></p>
         <p><i class="bi bi-envelope"></i> <a href="mailto:villanievesdelsur@argentina.gob" class="btn-mail">villanievesdelsur@argentina.gob</a></p>
         </div>
 
-        <!-- Columna 3: Enlaces externos y Redes -->
+        <!-- Enlaces externos -->
         <div class="footer-col">
         <h4>Enlaces</h4>
         <p><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/villa-nieves-del-sur" target="_blank" rel="noopener noreferrer">Instagram</a></p>
@@ -135,11 +152,13 @@
         </div>
     </div>
 
-    <!-- Barra Copyright -->
+    <!-- Copyright -->
     <div class="footer-bottom">
         <small class="footer-copyright">Copyright ©2026. Villa Nieves del Sur.</small>
     </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body> 
 </html>
