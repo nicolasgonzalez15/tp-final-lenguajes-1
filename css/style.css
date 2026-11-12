@@ -343,7 +343,14 @@ section h1, section h2, section p {
   font-style: italic;
   line-height: 1.5;
   margin-bottom:5px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; /* Estado normal */
 }
+
+.adicional p.fade-out {
+  opacity: 0;
+}
+
 
 /*----Estilos Ciudad----*/
 
