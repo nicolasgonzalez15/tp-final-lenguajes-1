@@ -224,6 +224,15 @@ section h1, section h2, section p {
 
 /*Estilos Index - Atractivos*/
 
+.buscador-atractivos {
+  width:90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
 .atractivos-container{
   display: flex;
   flex-direction: row;
