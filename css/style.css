@@ -20,6 +20,7 @@
   --textos-primario-claro: #D96B27;
   --textos-secundario-oscuro: #5E615B;
   --textos-footer-gris: #E0DFDE;
+  --textos-error: #bd1717;
 
   /* Colores Hover */
   --text-hover-soft: #C87D55;
@@ -533,9 +534,17 @@ border-radius: 10px;
   padding: 20px 70px 50px 70px;
 }
 
-form {
+.form-wrapper form {
   display: flex;
   flex-direction: column;
+}
+
+.form-wrapper form .form-validation-message {
+  color: var(--textos-error);
+  font-family: var(--fuente-principal);
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 
