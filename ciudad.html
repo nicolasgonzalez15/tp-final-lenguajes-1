@@ -44,6 +44,7 @@
             <div class="textos-principal">
                 <h1>VILLA NIEVES DEL SUR</h1>
                 <p>Ciudad</p>
+                <button type="button" id="modo-oscuro" class="btn-modo-oscuro">🌙 Modo oscuro</button>
             </div>
         </section>
         
@@ -81,6 +82,7 @@
     </section>
         <section id="lugares" class="lugares">
             <h2>Barrios principales</h2>
+            <input id="buscador" class="buscador-atractivos" placeholder="Buscar lugares...">
             <div class="atractivos-container">
                     <article class="tarjeta-atractivo">
                         <img src="img/ciudad/Barrio-Historico-El-Robledal.jpeg">
@@ -127,43 +129,43 @@
             </div>
 
         </section>
-
         <section id="eventos" class="eventos">
-            <h2>Costumbres y fiestas tradicionales</h2>
-            <div class="atractivos-container">
-                <article class="tarjeta-atractivo">
-                    <img src="img/ciudad/Festival-de-la-bufanda.jpeg" alt="Fiesta de la bufanda">
-                    <h3>Fiesta Nacional de la Bufanda de Crochet</h3>
-                    <p><time datetime="2026-07">07 de Julio</time></p>
-                    <p>
-                        Durante una semana, vecinos y visitantes tejen
-                        una bufanda comunitaria para vestir simbólicamente
-                        el monumento a los pioneros. </p>
-                </article>
-
-                <article class="tarjeta-atractivo">
-                    <img src="img/ciudad/Campeonato-del-chocolate-en-rama.jpeg" alt="Campeonato Federal Del Chocolate en Rama">
-                    <h3>Campeonato Federal del Chocolate en Rama</h3>
-                    <p><time datetime="2026-08"> 08 de Agosto</time></p>
-                    <p>
-                        Evento gastronómico en el que los reposteros
-                        elaboran obras de arte en cacao y compiten por
-                        la rama de chocolate más sabrosa y fina del año.
-                    </p>
-                    
-                </article>
-
-                <article class="tarjeta-atractivo">
-                    <img src="img/ciudad/Fiesta-Patronal-de-Nuestras-Señoras-de-las-Nieves.jpeg" alt="Fiesta Patronal de Nuestra Señora">
-                    <h3>Fiesta Patronal de Nuestra Señora de las Nieves</h3>
-                    <p><time datetime="2026-08-05">5 de agosto</time></p>
-                    <p>
-                        Celebración tradicional con una procesión de
-                        antorchas por los senderos nevados, seguida
-                        de una chocolatada popular.
-                    </p>
-                </article>
-            </div>
+             <h2>Costumbres y Fiestas tradicionales </h2>
+             <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                        <img src="img/ciudad/Festival-de-la-bufanda.jpeg" class="card-img-top" alt="Fiesta de la Bufanda">
+                        <div class="card-body">
+                            <h3 class="card-title">Fiesta Nacional de la Bufanda de Crochet</h3>
+                            <p class="card-text"><strong><time datetime="2026-07">📅 07 de Julio</time></strong> </p>
+                            <p class="card-text"><strong> Descripción: </strong>  Durante una semana, vecinos y visitantes tejen
+                        una bufanda comunitaria para vestir simbólicamente el monumento a los pioneros.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="img/ciudad/Campeonato-del-chocolate-en-rama.jpeg" class="card-img-top" alt="Campeonato Federal Del Chocolate en Rama">
+                        <div class="card-body">
+                            <h3 class="card-title">Campeonato Federal del Chocolate en Rama</h3>
+                            <p class="card-text"><strong><time datetime="2026-08">📅 08 de Agosto</time></strong> </p>
+                            <p class="card-text"><strong> Descripción: </strong> Evento gastronómico en el que los reposteros
+                               elaboran obras de arte en cacao y compiten por la rama de chocolate más sabrosa y fina del año. </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="img/ciudad/Fiesta-Patronal-de-Nuestras-Señoras-de-las-Nieves.jpeg" class="card-img-top" alt="Fiesta Patronal de Nuestra Señora">
+                        <div class="card-body">
+                            <h3 class="card-title">Fiesta Patronal de Nuestra Señora de las Nieves</h3>
+                            <p class="card-text"><strong><time datetime="2026-08-05">📅 5 de agosto</time></strong> </p>
+                            <p class="card-text"><strong> Descripción: </strong> Descripción: </strong>  Celebración tradicional con una procesión de
+                               antorchas por los senderos nevados, seguida de una chocolatada popular.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
 
         </section>
 
@@ -247,6 +249,8 @@
         <small class="footer-copyright">Copyright ©2026. Villa Nieves del Sur.</small>
     </div>
 </footer>
+<script src="js/buscador-atractivos.js"></script>
+<script src="js/modo-oscuro.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
