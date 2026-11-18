@@ -191,21 +191,38 @@
         <div class="card-body p-0">
           <div class="form-wrapper">
             <h2 class="contacto-title"><i class="bi bi-envelope-paper"></i> Formulario de Contacto</h2>
-            <form action="#" method="POST">
+            <form action="#" method="POST" id="contactoForm">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control mb-3" name="nombre" placeholder="Ingresa tu nombre" />
+              <input type="text" class="form-control mb-3" name="nombre" id="firstName" placeholder="Ingresa tu nombre" />
+              <span id="firstNameMessage" class="form-validation-message"></span>
               <label for="apellido" class="form-label">Apellido</label>
-              <input type="text" name="apellido" class="form-control mb-3" placeholder="Ingresa tu apellido" />
+              <input type="text" name="apellido" class="form-control mb-3" placeholder="Ingresa tu apellido" id="lastName" />
+              <span id="lastNameMessage" class="form-validation-message"></span>
               <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" placeholder="Ingresa email" class="form-control mb-3" />
+              <input type="email" name="email" id="email" placeholder="Ingresa email" class="form-control mb-3" />
+              <span id="emailMessage" class="form-validation-message"></span>
               <label for="consulta" class="form-label">Ingresa tu consulta</label>
-              <textarea name="consulta" cols="50" rows="8" placeholder="Escribe tu consulta" class="form-control mb-4"></textarea>
+              <textarea name="consulta" cols="50" rows="8" placeholder="Escribe tu consulta" class="form-control mb-4" id="textArea"></textarea>
+              <span id="textAreaMessage" class="form-validation-message"></span>
               <div class="row justify-content-center">
                 <div class="col-5">
                   <button class="btn btn-warning w-100" type="submit">Enviar</button>
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="formModalLabel">¡Consulta enviada exitosamente!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Nos contactaremos a la brevedad</p>
+            </div>
           </div>
         </div>
       </div>
@@ -271,5 +288,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/contacto.js"></script>
   </body>
 </html>

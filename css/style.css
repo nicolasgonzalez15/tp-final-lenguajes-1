@@ -20,6 +20,7 @@
   --textos-primario-claro: #D96B27;
   --textos-secundario-oscuro: #5E615B;
   --textos-footer-gris: #E0DFDE;
+  --textos-error: #bd1717;
 
   /* Colores Hover */
   --text-hover-soft: #C87D55;
@@ -43,6 +44,63 @@ body {
   line-height: 1.6;
   margin: 0 auto;
 }
+
+/* Clases body oscuro */
+
+/* Botón modo oscuro - claro */
+.btn-modo-oscuro {
+  background-color: #0A1616;
+  border: 1px solid #0A1616;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--bg-principal);
+  font-family: var(--fuente-principal);
+  font-size: 14px;
+}
+
+body.oscuro .btn-modo-oscuro {
+  background-color: var(--text-hover-strong);
+  background-color: var(--text-hover-strong);
+  border: 1px solid var(--text-hover-soft);
+  color: var(--bg-principal);
+}
+/* Modo oscuro  - Header - Footer - Cards atractivos - Secciones CIUDAD */
+
+body.oscuro { background-color: #222; color: white; } 
+body.oscuro .custom-navbar, body.oscuro footer { 
+  background-color: #111; 
+  color: white; 
+}
+
+body.oscuro h1, body.oscuro h2, body.oscuro h3{ 
+  color: white; 
+}
+body.oscuro .card h3{
+  color:#111;
+}
+
+body.oscuro .tarjeta-atractivo { 
+  background-color: #0A1616; 
+  color: white; 
+}
+body.oscuro .tarjeta-atractivo:hover { 
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; 
+}
+body.oscuro .datos-clave { 
+  background-color: #333; 
+  color: white; 
+}
+
+body.oscuro .datos-container { 
+  background-color: #333; 
+  color: white; 
+}
+
+body.oscuro .dato-importante { 
+  background-color: #444; 
+  color: white; 
+}
+/*----------------------------------*/
 
 a {
   text-decoration: none;
@@ -224,6 +282,15 @@ section h1, section h2, section p {
 
 /*Estilos Index - Atractivos*/
 
+.buscador-atractivos {
+  width:90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
 .atractivos-container{
   display: flex;
   flex-direction: row;
@@ -343,7 +410,14 @@ section h1, section h2, section p {
   font-style: italic;
   line-height: 1.5;
   margin-bottom:5px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; /* Estado normal */
 }
+
+.adicional p.fade-out {
+  opacity: 0;
+}
+
 
 /*----Estilos Ciudad----*/
 
@@ -460,9 +534,17 @@ border-radius: 10px;
   padding: 20px 70px 50px 70px;
 }
 
-form {
+.form-wrapper form {
   display: flex;
   flex-direction: column;
+}
+
+.form-wrapper form .form-validation-message {
+  color: var(--textos-error);
+  font-family: var(--fuente-principal);
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 
