@@ -722,3 +722,24 @@ form {
   height: auto;
   border-radius: 10px;
 }
+
+#btn-subir {
+  display: none; /* Oculto al inicio */
+  position: fixed; /* Fijo respecto a la pantalla */
+  bottom: 20px;
+  right: 20px;
+  z-index: 100; /* Asegura que quede por encima de otros elementos */
+  background-color: #1A2B4A;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer; /* Muestra la mano al pasar el mouse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#btn-subir:hover {
+  background-color: #028090;
+}
