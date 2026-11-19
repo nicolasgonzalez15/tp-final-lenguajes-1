@@ -24,6 +24,7 @@
 
   /* Colores Hover */
   --text-hover-soft: #C87D55;
+  --text-hover-orange:#ea630f;
   --text-hover-strong: #D96B27;
   --background-color-opacity: rgba(142, 142, 142, 0.504);
 
@@ -100,6 +101,35 @@ body.oscuro .dato-importante {
   background-color: #444; 
   color: white; 
 }
+
+body.oscuro .slide-presentacion { 
+  background-color: #333; 
+  color: white; 
+}
+
+body.oscuro .tags-presentacion .tag { 
+  background-color: #555; 
+  color: white; 
+}
+
+body.oscuro .newsletter-form { 
+  background-color: #333; 
+  color: white; 
+} 
+
+body.oscuro .adicional { 
+  background-color: #444; 
+  color: white; 
+} 
+
+body.oscuro .adicional h2 { 
+  color: #ddd; 
+} 
+
+body.oscuro .adicional p { 
+  color: #eee; 
+}
+
 /*----------------------------------*/
 
 a {
@@ -811,7 +841,7 @@ border-radius: 10px;
   bottom: 20px;
   right: 20px;
   z-index: 100; /* Asegura que quede por encima de otros elementos */
-  background-color: #1A2B4A;
+  background-color: var(--textos-primario-claro);
   color: white;
   border: none;
   border-radius: 50%;
@@ -823,5 +853,5 @@ border-radius: 10px;
 }
 
 #btn-subir:hover {
-  background-color: #028090;
+  background-color:var(--text-hover-orange)
 }
