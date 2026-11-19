@@ -820,6 +820,26 @@ border-radius: 10px;
   border-radius: 10px;
 }
 
+body.oscuro #lugares-interes .lugar-card,
+body.oscuro #gastronomia .gastronomia-container,
+body.oscuro #excursiones .excursiones-container {
+  background-color: #333;
+  color: white;
+}
+
+body.oscuro #lugares-interes .lugar-card h3 {
+  color: white;
+}
+
+body.oscuro #selector-todo,
+body.oscuro #selector-lugares-interes,
+body.oscuro #selector-gastronomia,
+body.oscuro #selector-excursiones {
+  color: white;
+  background-color: #212529;
+  border-color: #212529;
+}
+
 /* Estilos Lugares FIN********************************/
 
 /*Estilos Galeria Grid*/
